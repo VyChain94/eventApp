@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EventApp</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/tms-0.4.1.js"></script>
+    <script type="text/javascript" src="js/hover-image.js"></script>
+    <script>
+    	$(function(){
+         $('.slider')._TMS({
+            prevBu:false,
+            nextBu:false,
+            playBu:false,
+            duration:500,
+            easing:'easeOutQuad',
+            preset:'diagonalFade',
+            pagination:true,//'.pagination',true,'<ul></ul>'
+            pagNums:false,
+            slideshow:7000,
+            numStatus:false,
+            banners:'fade',// fromLeft, fromRight, fromTop, fromBottom
+            waitBannerAnimation:false,
+            progressBar:false
+         })
+      })
+    </script>
+</head>
+<body>
+<div class="main">
+<!--==============================header=================================-->
+   	<header>
+       <div class="top">
+         <div class="nav">
+           <ul class="sf-menu">
+              <li><a href="#">home</a></li>
+              <li><a href="#">reviews</a></li>
+              <li><a href="#">news</a></li>
+              <li><a href="#">videos</a></li>
+              <li><a href="#">blog</a></li>
+              <li><a href="#">contacts</a></li>
+           </ul>
+         </div>
+         <!-- <div class="login">
+             You have not yet registered to our club? &nbsp;&nbsp; &nbsp; <a href="#">Register</a> &nbsp;&nbsp; or &nbsp;&nbsp; <a href="#">Log in</a>
+         </div> -->
+         <div class="clear"></div>
+       </div>
+       <div class="middle">
+         <h1><a class="logo" href="index.html"><img src="images/logo.png" alt=""></a></h1>
+         <a href="#" class="h_banner"></a>
+       </div>
+	    <nav>
+        	<ul class="sf-menu">
+            <!-- <li class="current f_item"><a href="index.html">All Events</a></li>
+            <li><a href="jazz.html">Jazz</a></li>
+            <li><a href="comedy.html">Comedy</a></li>
+            <li><a href="world-music.html">World Music</a></li>
+            <li><a href="reggae.html">Reggae</a></li>
+            <li><a href="reggaeton.html">R&B</a></li> -->
+         </ul>
+         <form id="search">
+            <input type="text" id="searchValue" placeholder="Artist Name" />
+            <!-- <button class="button1">Search</button> -->
+         </form>
+         <div class="clear"></div>
+        </nav>
+    </header>
+      <!-- slider -->
+      <div id="slider">
+        <div class="slider">
+          <ul class="items">
+            <li>
+               <!-- IMAGES HERE -->
+               <img src="images/slide1.png" width="640" height="385" alt="slide1" />
+               <div class="banner">
+                  <div class="title1">Title</div>
+                  <div class="title2">Description </div>
+                  Lorem labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br>ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen- derit in voluptate velit esse.
+                  <div class="but_wrap">
+                     <a href="#" class="button2">read more</a>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <img src="images/slide2.png" width="640" height="385" alt="slide2" />
+               <div class="banner">
+                  <div class="title1">Title</div>
+                  <div class="title2">Description </div>
+                  Lorem tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br>ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen- derit in voluptate velit esse.
+                  <div class="but_wrap">
+                     <a href="#" class="button2">read more</a>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <img src="images/slide4.png" width="640" height="385" alt="slide4" />
+               <div class="banner">
+                  <div class="title1">Title</div>
+                  <div class="title2">Description </div>
+                  Lorem ipsum dolor sit amet tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br>ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen- derit in voluptate velit esse.
+                  <div class="but_wrap">
+                     <a href="#" class="button2">read more</a>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <img src="images/slide3.png" width="640" height="385" alt="slide3" />
+               <div class="banner">
+                  <div class="title1">Title</div>
+                  <div class="title2">Description</div>
+                  Lorem sed do eiusmoe magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br>ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen- derit in voluptate velit esse.
+                  <div class="but_wrap">
+                     <a href="#" class="button2">read more</a>
+                  </div>
+               </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- slider-end -->
+<!--==============================content================================-->
+    <section id="content">
+    	<div class="container_12">
+        	<div class="wrapper">
+            <article class="grid_8">
+               <div class="box">
+                  <h2 class="first">Upcoming Events</h2>
+                  <div class="sub_box">
+                     <ul class="ext_list topics">
+                        <li>
+                        
+                           <figure><img id="topic1" src="" alt=""/></figure>
+                           <div>
+                              <h3 class="ind1">Start Date</h3>
+                              <div id="contents"></div>
+                           </div>
+                        </li>
+                        <li>
+                           <figure><img id="topic2" src="" alt=""/></figure>
+                           <div>
+                              <h3 class="ind1">Start Date</h3>
+                              <div id="contents2"></div>
+                           </div>
+                        </li>
+                        <li class="m_bottom_zero">
+                           <figure><img id="topic3" src="" alt="" /></figure>
+                           <div>
+                              <h3 class="ind1">Start Date</h3>
+                              <div id="contents3"></div>
+                           </div>
+                        </li>
+                     </ul>
+                     <!-- <a href="#" class="link1">see all</a> -->
+                  </div>
+               </div>
+            </article>
+            <article class="grid_4">
+               <div class="box m_bot1">
+                  <h2 class="first">Past Events</h2>
+                  <div class="sub_box1">
+                     <ul class="ext_list latest_r">
+                        <li>
+                           <div class="ext_box review">
+                              <figure><img src="images/latest4.png" alt="" /></figure>
+                              <div>
+                                 <h3 class="ind2">NEWS</h3>
+                                 <h4>Lorem ipsum dolor sit amet conse</h4>
+                              </div>
+                           </div> 
+                           <div class="text"><a href="#">Lorem ipsum dolor sit amet conse ctetur adipi- sicing elit, sed do eiusmod tempor incididunt <br>ut labore et dolore magna aliqua.</a></div>
+                        </li>
+                        <!-- <li class="m_bottom_zero">
+                           <div class="ext_box review">
+                              <figure><img src="images/latest2.jpg" alt="" /></figure>
+                              <div>
+                                 <h3 class="ind2">NEWS</h3>
+                                 <h4>dolor sit amet conse </h4>
+                              </div>
+                           </div> 
+                           <div class="text"><a href="#">Lorem ipsum dolor sit amet conse ctetur adipi- sicing elit, sed do eiusmod tempor incididunt <br>ut labore et dolore magna aliqua.</a></div>
+                        </li>
+                     </ul>
+                     <a href="#" class="link1">see all</a> -->
+                  </div>
+               </div>
+               <!-- <div class="box">
+                  <h2 class="first">Latest video</h2>
+                  <div class="sub_box">
+                     <ul class="ext_list latest_r video">
+                        <li class="m_bottom_zero">
+                           <div class="ext_box review">
+                              <figure><a class="lightbox-video" href="flash/video_AS3.swf?width=512&amp;height=288&amp;fileVideo=intro06.flv" data-gal="prettyPhoto"><img src="images/latest3.jpg" alt="" /></a></figure>
+                              <div>
+                                 <h3 class="ind2">XBOX 360</h3>
+                                 <h4 class="ind">ipsum dolor sit amet conse </h4>
+                              </div>
+                           </div> 
+                           <div class="text"><a href="#">Lorem ipsum dolor sit amet conse ctetur.</a></div>
+                        </li>
+                     </ul>
+                     <a href="#" class="link1">see all</a>
+                  </div>
+               </div>
+            </article>
+         </div>
+      </div>
+    </section> -->
+    <!-- <aside>
+      <div class="container_12">
+         <div class="wrapper">
+            <article class="grid_4">
+               <h5>about us</h5>
+               <p class="green p2">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+               Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+               <a href="#" class="link2">read more</a>
+            </article>
+            <article class="grid_4">
+               <h5>featured</h5>
+               <p class="green p3">Dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+               <p class="p3">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+               Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.<br>
+               <a href="#" class="link2 b_ind">read more</a>
+            </article>
+            <article class="grid_4">
+               <h5>top games:</h5>
+               <ul class="games_list">
+                  <li>
+                     <span class="green">XBOX 360</span><br>
+                     <a href="#">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor</a>
+                  </li>
+                  <li>
+                     <span class="green">Mobile</span><br>
+                     <a href="#">Dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor</a>
+                  </li>
+                  <li class="last bd_none">
+                     <span class="green">XBOX 360</span><br>
+                     <a href="#">Sit amet conse ctetur adipisicing elit</a>
+                  </li>
+               </ul>
+               <a href="#" class="link2">read more</a>
+            </article>
+         </div>
+      </div>
+    </aside> -->
+<!--==============================footer=================================-->
+    <footer>
+      <div class="nav">
+         <ul class="sf-menu">
+            <!-- <li><a href="#">home</a></li>
+            <li><a href="#">reviews</a></li>
+            <li><a href="#">news</a></li>
+            <li><a href="#">videos</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">contacts</a></li> -->
+         </ul>
+       </div>
+      <div class="privacy">
+         <a href="index.html"><img src="images/logo.png"  alt="f_logo" /></a>
+          <span><a href="https://gardenofivy.com/">© Ivy Tigs Jr</a></span><br>
+          <!-- {%FOOTER_LINK} -->
+      </div>
+    </footer>
+</div>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
