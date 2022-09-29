@@ -94,12 +94,8 @@ h2{font-size: 17px; line-height: 23px; color:#fff;background: url('../images/h2_
 h2.first{border-radius:5px 5px 0 0;}
 h2.first{padding:10px;}
 
-
-h2.ind{ padding-bottom:14px;}
-h2.ind1{ margin-bottom:4px;}
-
 h3{font-size: 12px; line-height: 19px; color:#8cc503;text-transform:none !important;}
-h3.ind1{ margin-bottom:13px;}
+h3#ind1{ margin-bottom:13px;}
 h3.ind2{ margin-bottom:9px;}
 
 h4{font-size: 14px; line-height: 19px; color: #fff;margin-bottom:12px;}

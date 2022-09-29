@@ -5,8 +5,9 @@ const eventSearchable = document.querySelector('#event-searchable');
 const apiKey= 'iPzGu4kCNVe9ZS1UfVUW84J6JU7nzYUk'
 const query = inputEl.value
 
-// insert serach and api so we can use laster
+// pass url as an arugument to be used as a parameter later
 // const url = 'https://app.ticketmaster.com/discovery/v2/events.json?&apikey=iPzGu4kCNVe9ZS1UfVUW84J6JU7nzYUk'
+
 
 // create a function that generates dynamic url 
 // REQUEST PER GENRE?
@@ -23,12 +24,54 @@ function getJazz(){
         //grab the index we want from the array
 const result = limit[0]
 // console.log(result)
+let date=result.dates.start.localDate
+date = date.split("-").reverse().join("/");
+console.log(date);
+
+console.log(date)
+
+let time=result.dates.start.localTime
+console.log(time)
+
+
+
+time = "20:00:00"; // your input
+
+time = time.split(':'); // convert to array
+
+// fetch
+const hours = Number(time[0]);
+const minutes = Number(time[1]);
+const seconds = Number(time[2]);
+
+// calculate
+let timeValue;
+
+if (hours > 0 && hours <= 12) {
+  timeValue= "" + hours;
+} else if (hours > 12) {
+  timeValue= "" + (hours - 12);
+} else if (hours == 0) {
+  timeValue= "12";
+}
+ 
+timeValue += (minutes < 10) ? ":0" + minutes : ":" + minutes;  // get minutes
+timeValue += (hours >= 12) ? " P.M." : " A.M.";  // get AM/PM
+
+
+
+// show
+// alert(timeValue);
+// console.log(timeValue);
+
+
 
 
 //add indexed properties to the DOM
 document.getElementById('contents').innerHTML = 
 
-    `<h4>${result.name}</h4>
+    `<h3>${result.name}</h3>
+    <h4>Date: ${date} ${timeValue}</h4>
     <h3>${result._embedded.venues[0].name}</h3>
     <h3>$ ${result.priceRanges[0].max}0</h3>
     <button><a href="${result.url}">Get my seats</a></button><br>
@@ -51,11 +94,9 @@ document.getElementById('contents').innerHTML =
 
         //go to events object
         let limit = data._embedded.events
-        console.log(limit)
 
         //grab the index we want from the array
 const result = limit[4]
-console.log(result)
 
 
 //add indexed properties to the DOM
@@ -81,11 +122,11 @@ document.getElementById('contents2').innerHTML =
 
         //go to events object
         let limit = data._embedded.events
-        console.log(limit)
+
 
         //grab the index we want from the array
 const result = limit[1]
-console.log(result)
+
 
 
 //add indexed properties to the DOM
